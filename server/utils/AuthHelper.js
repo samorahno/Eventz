@@ -15,7 +15,7 @@ const verifyPassword = (password, hash) =>{
 
 const generateToken = userData =>{
     return jwt.sign(userData, "secretKey", {
-        expiresIn: 24*60*60,
+        expiresIn: '2d',
         issuer: "eventz api",
     })
 }
